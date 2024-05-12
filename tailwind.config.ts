@@ -19,7 +19,8 @@ const config = {
     },
     fontFamily: {
       sans: ["var(--font-geist-sans)"],
-      caption: ["var(--font-caption"]
+      mono: ["var(--font-geist-mono)"],
+      caption: ["var(--font-caption)"],
     },
     extend: {
       colors: {

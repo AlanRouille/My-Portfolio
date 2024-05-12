@@ -1,20 +1,27 @@
 /* eslint-disable @next/next/no-img-element */
+import { cn } from "@/lib/utils"
+import { ComponentPropsWithoutRef } from "react"
 import { Section } from "./Section"
 
+const Code = ({className,...props}: ComponentPropsWithoutRef<"span">) => {
+  return <span className={cn("bg-accent/30 font-mono hover:bg-accent/50 transition-colors border-spacing-2 border-accent px-1 py-0.5 text-primary rounded-sm",className)} {...props} />
+}
+
 export const Hero = () => {
-  return <Section className="flex max-lg:flex-col items-start">
-    <div className="flex-[2]"> 
-      <h2>Alan Rouillé</h2>
-      <h3>
-      Developer web and Design consultant
-      </h3>
-      <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Inventore nulla magnam officiis atque. Velit perferendis eos modi perspiciatis eveniet. Qui enim minima beatae, eaque provident culpa praesentium necessitatibus similique deleniti.</p>
-      <div className="flex-1">
-      <img src="https://media.licdn.com/dms/image/D4E03AQHzjPKWWBbs4Q/profile-displayphoto-shrink_800_800/0/1676992405536?e=1720656000&v=beta&t=edoZFcvgUWBgd0BiEXxgrauUU3xrVZ2CHx55iIPqQQ4"
-      className="w-full h-auto"
-      alt="Alan's picture"
-      />
+  return (
+    <Section className="flex max-md:flex-col items-start">
+      <div className="flex-[2]">
+        <h2 className="font-caption font-bold text-4xl text-primary">hey, I'am Alan Rouillé👋</h2>
+        <h3 className="text-2xl font-caption">Developer web and Design consultant</h3>
+        <p className="text-base">Je suis développeur front-end et consultant en design,</p>
       </div>
-    </div>
-  </Section>
+      <div className="flex-1">
+        <img
+          src="/images/DSC00844.png"
+          className="w-full h-auto max-w-"
+          alt="Alan's picture "
+        />
+      </div>
+    </Section>
+  )
 }
