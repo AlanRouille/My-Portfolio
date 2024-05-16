@@ -1,7 +1,9 @@
+/* eslint-disable react/jsx-no-undef */
 /* eslint-disable @next/next/no-img-element */
 import { Code, Ellipsis, LucideIcon, Scroll } from "lucide-react";
 import Link from "next/link.js";
 import { Section } from "./Section";
+import { Badge } from "./ui/badge";
 import { Card } from "./ui/card";
 
 export const States = () => {
@@ -30,11 +32,7 @@ export const States = () => {
               {WORKS.map((work, index) =>(
                 <Work
                   key={index}
-                  image={work.image}
-                  title={work.title}
-                  role={work.role}
-                  date={work.date}
-                  url= {work.url}
+                  {...work}
                   />
               ))}
             </div>
@@ -88,13 +86,17 @@ const StateProjet = (props: StateProjetProps) => {
   );
 };
 
-const WORKS :WorkProjetProps[] = [{
-  image: "https://scontent.fcdg3-1.fna.fbcdn.net/v/t39.30808-6/391589987_628114522824713_1843163460124779404_n.jpg?_nc_cat=100&ccb=1-7&_nc_sid=5f2048&_nc_ohc=BzJ03ynF8ikQ7kNvgFHxE8V&_nc_ht=scontent.fcdg3-1.fna&oh=00_AYCOCRDjgF_T0ZRm5XEiwCom2V7vxiE1h8hFb2Wz_4LaaQ&oe=664B937F",
-  title:"Alan Rouillé",
-  role:"Founder",
-  date:"2023 - Present",
-  url:"https://www.facebook.com/AlanRouilleDesignDev",
-}] 
+const WORKS : WorkProps [] = [
+  {
+    image: "https://scontent.fcdg3-1.fna.fbcdn.net/v/t39.30808-6/391589987_628114522824713_1843163460124779404_n.jpg?_nc_cat=100&ccb=1-7&_nc_sid=5f2048&_nc_ohc=BzJ03ynF8ikQ7kNvgFHxE8V&_nc_ht=scontent.fcdg3-1.fna&oh=00_AYCOCRDjgF_T0ZRm5XEiwCom2V7vxiE1h8hFb2Wz_4LaaQ&oe=664B937F",
+    title: "ARDeveloper",
+    role: "founder",
+    date:"2023 - Present",
+    url: "https://www.facebook.com/AlanRouilleDesignDev",
+    freelance: true,
+  },
+
+];
 
 type WorkProps = {
   image: string;
@@ -102,20 +104,21 @@ type WorkProps = {
   role: string;
   date: string;
   url: string;
+  freelance?: boolean
 };
 
 const Work = (props: WorkProps) => {
   return (
     <Link href={props.url} className="inline-flex items-center gap-4 hover:bg-accent/50 transition-colors p-1 rounded">
         <img src={props.image} alt={props.title} className="w-10 h-10 object-contain rounded-md"/>
-      
-      <div>
-        <p className="text-lg font-semibold">{props.title}</p>
-        <p className="text-sm text-muted-foreground">{props.role}</p>
+      <div className="mr-auto">
+        <div className="flex items-center gap-2">
+          <p className="text-lg text-primary font-semibold">{props.title}</p>
+          {props.freelance && <Badge variant="outline">Freelance</Badge>}
+        </div>
+          <p className="text-xs text-muted-foreground">{props.role}</p>
       </div>
-      <div className="ml-auto">
-      <p className="text-sm text-muted-foreground">{props.date}</p> 
-      </div>
+      <p className="text-xs text-muted-foreground">{props.date}</p>
     </Link>
   );
 };
