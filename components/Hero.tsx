@@ -1,6 +1,5 @@
 /* eslint-disable @next/next/no-img-element */
-import { cn } from '@/lib/utils'
-import { ComponentPropsWithoutRef } from 'react'
+import { Code } from "./Code"
 import { Section } from './Section'
 import { IllustratorIcon } from './icons/IllustratorIcon'
 import { NextIcon } from './icons/NextIcon'
@@ -8,17 +7,6 @@ import { ReactIcon } from './icons/ReactIcon'
 import { TailwindcssIcon } from './icons/TailwindcssIcon'
 import { VercelIcon } from './icons/VerselIcon'
 
-const Code = ({ className, ...props }: ComponentPropsWithoutRef<'span'>) => {
-  return (
-    <span
-      className={cn(
-        'bg-accent/30 font-mono hover:bg-accent/50 transition-colors border-spacing-2 border border-accent px-1 py-0.5 text-primary rounded-sm',
-        className,
-      )}
-      {...props}
-    />
-  )
-}
 
 export const Hero = () => {
   return (
@@ -32,21 +20,21 @@ export const Hero = () => {
         </h3>
         <p className="text-base">
           I am a frontend developer and design consultant, specializing in
-          creating interfaces with{' '}
+          creating interfaces with
           <Code className="inline-flex items-center gap-1 mx-1">
-            <NextIcon size={16} className="inline" />
+            <NextIcon size={16} className="inline"/>
             Next
-          </Code>
+          </Code>,
           
           <Code className="inline-flex items-center gap-1 my- mx-1">
             <ReactIcon size={16} />
             React
-          </Code>
-          ,
+          </Code>,{' '}
+          
           <Code className="inline-flex items-center gap-1 my-1">
             <TailwindcssIcon size={16} className="inline" />Tailwindcss
-          </Code>
-          , and in graphic design with{' '}
+          </Code>{' '}
+          and in graphic design with{' '}
           <Code className="inline-flex items-center gap-1 my-1">
             <IllustratorIcon size={16} className="inline" />
             Illustrator

@@ -1,5 +1,6 @@
 import { Header } from '@/components/Header'
 import { Hero } from '@/components/Hero'
+import { Skills } from '@/components/Skills'
 import { Spacing } from '@/components/Spacing'
 import { States } from '@/components/States'
 
@@ -14,7 +15,11 @@ export default function Home() {
 
       <Spacing size="md" />
 
-      <States/>
+      <States />
+
+      <Spacing size='md' />
+
+      <Skills />
 
     </main>
   )
