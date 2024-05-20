@@ -20,16 +20,16 @@ export const Hero = () => {
         </h3>
         <p className="text-base">
           I am a frontend developer and design consultant, specializing in
-          creating interfaces with
+          creating interfaces with{' '}
           <Code className="inline-flex items-center gap-1 mx-1">
             <NextIcon size={16} className="inline"/>
             Next
-          </Code>,
+          </Code>
           
           <Code className="inline-flex items-center gap-1 my- mx-1">
             <ReactIcon size={16} />
             React
-          </Code>,{' '}
+          </Code>{' '}
           
           <Code className="inline-flex items-center gap-1 my-1">
             <TailwindcssIcon size={16} className="inline" />Tailwindcss

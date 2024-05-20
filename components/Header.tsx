@@ -12,12 +12,6 @@ export const Header = () => {
       <Section className="flex items-baseline">
         <h1 className="text-lg font-bold text-primary">
           Alanrouille.com
-          {/* <Image 
-        src="/images/Logo150px.png"
-        alt="Alan's picture"
-        width={50}
-        height={50}
-        />  */}
         </h1>
         <div className="flex-1" />
         <ul className="flex items-center gap-2">
