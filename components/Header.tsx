@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-img-element */
 import { cn } from '@/lib/utils'
 import Link from 'next/link'
 import { Section } from '../components/Section'
@@ -9,10 +10,11 @@ import { buttonVariants } from './ui/button'
 export const Header = () => {
   return (
     <header className="sticky top-0 py-4">
-      <Section className="flex items-baseline">
-        <h1 className="text-lg font-bold text-primary">
+      <Section className="flex items-center">
+        {/* <h1 className="text-lg font-bold text-primary">
           Alanrouille.com
-        </h1>
+        </h1> */}
+        <img src='/images/Logo150px.png' alt='Logo' className=' h-14 w-auto'/>
         <div className="flex-1" />
         <ul className="flex items-center gap-2">
           <Link

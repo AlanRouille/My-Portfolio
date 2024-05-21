@@ -11,22 +11,25 @@ export const Contact = () => {
     </h2>
     <div className="flex max-md:flex-col w-full gap-4">
         <ContactCard
+        className="flex-1"
           url="https://linkedin.com/in/alan-rouilledevdesign" 
-          name="Alan Rouillé" 
+          name="Alan" 
           image="/images/DSC00844.png" 
           mediumImage="https://upload.wikimedia.org/wikipedia/commons/thumb/8/81/LinkedIn_icon.svg/144px-LinkedIn_icon.svg.png" description="Linkedin"
           
           />
         <ContactCard
+        className="flex-1"
           url="https://x.com/AlanRouille"
           name="@AlanRouille" 
           image="/images/DSC00844.png" 
           mediumImage="https://freelogopng.com/images/all_img/1690643591twitter-x-logo-png.png" 
           description="Twitter"
         />
-        <ContactCard 
+        <ContactCard
+        className="flex-1" 
           url="mailto:alanrouilledev@gmail.com"
-          name="alanrouilledev@gmail.com" 
+          name="Alanrouilledev" 
           image="/images/DSC00844.png" 
           mediumImage="https://upload.wikimedia.org/wikipedia/commons/thumb/7/7e/Gmail_icon_%282020%29.svg/1024px-Gmail_icon_%282020%29.svg.png" description="Feel free to email me for any inquiries"
         />

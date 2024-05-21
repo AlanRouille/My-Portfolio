@@ -1,6 +1,6 @@
 /* eslint-disable react/jsx-no-undef */
 /* eslint-disable @next/next/no-img-element */
-import { Code, Ellipsis, Scroll } from "lucide-react";
+import { Code, Ellipsis, GalleryVertical, Scroll } from "lucide-react";
 import { ContactCard } from "./ContactCard";
 import { Section } from "./Section";
 import { StateProjet, StateProjetProps } from "./StateProjet";
@@ -79,8 +79,8 @@ const STATE_PROJECTS : StateProjetProps [] = [
     url: "/",
   },
   {
-    Logo: Ellipsis,
-    title: "My Portfolio",
+    Logo: GalleryVertical,
+    title: "Portfolio",
     description: "Website creation",
     url: "/",
   },
@@ -94,7 +94,7 @@ const WORKS : WorkProps [] = [
     role: "founder",
     date:"2023 - Present",
     url: "https://www.facebook.com/AlanRouilleDesignDev",
-    freelance: true,
+    freelance: false,
   },
 
 ];

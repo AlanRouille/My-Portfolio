@@ -48,10 +48,10 @@ export const Hero = () => {
           platform to optimize the deployment of web applications.
         </p>
       </div>
-      <div className="flex-[2] max:md:m-auto ml-auto">
+      <div className="flex-[2] max:md:mx-auto flex justify-center">
         <img
           src="/images/DSC00844.png"
-          className="w-full h-auto max-w-xs max-md:w-56"
+          className="w-full h-auto"
           alt="Alan's picture "
         />
       </div>
