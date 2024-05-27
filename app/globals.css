@@ -3,27 +3,52 @@
 @tailwind utilities;
 
 @layer base {
-  :root {
-    --background: 216 13% 15%;
-    --foreground: 219 18% 71%;
-    --muted: 216 12% 19%;
-    --muted-foreground: 216 12% 69%;
-    --popover: 216 13% 12%;
-    --popover-foreground: 219 18% 81%;
-    --card: 216 13% 13%;
-    --card-foreground: 219 18% 76%;
-    --border: 216 3% 20%;
-    --input: 216 3% 23%;
-    --primary: 219 18% 81%;
-    --primary-foreground: 219 18% 21%;
-    --secondary: 219 8% 25%;
-    --secondary-foreground: 219 8% 85%;
-    --accent: 216 13% 30%;
-    --accent-foreground: 216 13% 90%;
-    --destructive: 3 95% 48%;
-    --destructive-foreground: 0 0% 100%;
-    --ring: 219 18% 81%;
-    --radius: 0.5rem;
+  @layer base {
+    :root {
+      --background: 216 13% 95%;
+      --foreground: 219 18% 30%;
+      --muted: 216 12% 92%;
+      --muted-foreground: 216 12% 35%;
+      --popover: 216 13% 97%;
+      --popover-foreground: 219 18% 25%;
+      --card: 216 13% 96%;
+      --card-foreground: 219 18% 28%;
+      --border: 216 3% 85%;
+      --input: 216 3% 88%;
+      --primary: 219 18% 25%;
+      --primary-foreground: 219 18% 95%;
+      --secondary: 219 8% 75%;
+      --secondary-foreground: 219 8% 15%;
+      --accent: 216 13% 70%;
+      --accent-foreground: 216 13% 10%;
+      --destructive: 3 95% 60%;
+      --destructive-foreground: 0 0% 0%;
+      --ring: 219 18% 25%;
+      --radius: 0.5rem;
+    }
+
+    .dark {
+      --background: 216 13% 15%;
+      --foreground: 219 18% 71%;
+      --muted: 216 12% 19%;
+      --muted-foreground: 216 12% 69%;
+      --popover: 216 13% 12%;
+      --popover-foreground: 219 18% 81%;
+      --card: 216 13% 13%;
+      --card-foreground: 219 18% 76%;
+      --border: 216 3% 20%;
+      --input: 216 3% 23%;
+      --primary: 219 18% 81%;
+      --primary-foreground: 219 18% 21%;
+      --secondary: 219 8% 25%;
+      --secondary-foreground: 219 8% 85%;
+      --accent: 216 13% 30%;
+      --accent-foreground: 216 13% 90%;
+      --destructive: 3 95% 48%;
+      --destructive-foreground: 0 0% 100%;
+      --ring: 219 18% 81%;
+      --radius: 0.5rem;
+    }
   }
 }
 

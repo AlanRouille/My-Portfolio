@@ -1,7 +1,7 @@
-import { ComponentPropsWithoutRef } from 'react'
+import { ComponentPropsWithoutRef } from 'react';
 
 export const VercelIcon = (
-  props: ComponentPropsWithoutRef<'svg'> & { size?: number },
+  props: ComponentPropsWithoutRef<'svg'> & { size?: number }
 ) => {
   return (
     <svg
@@ -14,10 +14,10 @@ export const VercelIcon = (
     >
       <g>
         <polygon
-          fill="#22252B"
+          fill="#000000"
           points="128 0 256 221.705007 0 221.705007"
         ></polygon>
       </g>
     </svg>
-  )
-}
+  );
+};

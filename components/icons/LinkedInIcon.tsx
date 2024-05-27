@@ -1,7 +1,7 @@
-import { ComponentPropsWithoutRef } from 'react'
+import { ComponentPropsWithoutRef } from 'react';
 
 export const LinkedInIcon = (
-  props: ComponentPropsWithoutRef<'svg'> & { size?: number },
+  props: ComponentPropsWithoutRef<'svg'> & { size?: number }
 ) => {
   return (
     <svg
@@ -19,5 +19,5 @@ export const LinkedInIcon = (
         ></path>
       </g>
     </svg>
-  )
-}
+  );
+};
